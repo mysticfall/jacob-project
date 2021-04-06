@@ -17,7 +17,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
 import javax.swing.filechooser.FileFilter;
 
-import com.jacob.com.ComThread;
+import com.sap.smb.sbo.wrapper.com.ComThread;
 
 /**
  * Created as part of sourceforge 1386454 to demonstrate returning values in

@@ -52,8 +52,8 @@
 
 	<property name="application.title"              value="JACOB : Java COM Bridge" />
 	<property name="application.vendor"             value="http://jacob-project.sourceforge.net" />
-	<property name="src.java.mainpackage"           value="com.jacob" />
-	<property name="src.java.mainpackage.manifest" 	value="com/jacob/" />
+	<property name="src.java.mainpackage"           value="com.sap.smb.sbo.wrapper" />
+	<property name="src.java.mainpackage.manifest" 	value="com/sap/smb/sbo/wrapper/" />
 	<property name="generated.filename.dll.x86"     value="jacob-${version}-x86.dll" />
 	<property name="generated.filename.dll.x64"     value="jacob-${version}-x64.dll" />
 	<property name="generated.filename.jar"         value="jacob.jar" />
@@ -218,27 +218,31 @@
 		<javac srcdir="${src.java.mainroot}" 
 			destdir="${release.dir.java}" 
 			listfiles="true" debug="on"
-			includeantruntime="false" />
+			includeantruntime="false" 
+			target="1.8" />
 		<echo>Building sample classes in ${release.dir.java}</echo>
 		<javac srcdir="${src.java.samples}" 
 			destdir="${release.dir.java}" 
 			classpath="${release.dir.java}"
 			listfiles="true" debug="on"
-			includeantruntime="false" />
+			includeantruntime="false" 
+			target="1.8" />
 		<echo>Building Jacob test classes in ${release.dir.java} using junit jar ${junit.jar}</echo>
 		<javac srcdir="${src.java.unittest}" 
 			destdir="${release.dir.java}" 
 			classpath="${release.dir.java}:${junit.jar}"
-			excludes="com/jacob/test/safearray/SafeArrayBasicTest.java"
+			excludes="com/sap/smb/sbo/wrapper/test/safearray/SafeArrayBasicTest.java"
 			listfiles="true" debug="on"
-			includeantruntime="false" />
+			includeantruntime="false" 
+			target="1.8" />
 		<!-- one test has different character encoding -->
 		<javac srcdir="${src.java.unittest}" 
 			destdir="${release.dir.java}" 
 			classpath="${release.dir.java}:${junit.jar}"
-			includes="com/jacob/test/safearray/SafeArrayBasicTest.java"
+			includes="com/sap/smb/sbo/wrapper/test/safearray/SafeArrayBasicTest.java"
 			listfiles="true" debug="on"
 			includeantruntime="false"
+			target="1.8"
 			encoding="UTF-16"/>
 	</target>
 	<!-- ======================================================================
@@ -257,8 +261,8 @@
 			<!-- exclude all unit tests (ending in Test) 
 				and everything in the samples and test packages -->
 			<exclude name="com/**/*Test*.class"/>
-			<exclude name="com/jacob/samples/**"/>
-			<exclude name="com/jacob/test/**"/>
+			<exclude name="com/sap/smb/sbo/wrapper/samples/**"/>
+			<exclude name="com/sap/smb/sbo/wrapper/test/**"/>
 			<include name="com/**/*.class" />
 			<include name="META-INF/${generated.filename.version}" />
 			<manifest>

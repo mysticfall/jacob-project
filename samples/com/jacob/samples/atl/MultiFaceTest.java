@@ -1,8 +1,8 @@
 package com.jacob.samples.atl;
 
-import com.jacob.activeX.ActiveXComponent;
-import com.jacob.com.Dispatch;
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.activeX.ActiveXComponent;
+import com.sap.smb.sbo.wrapper.com.Dispatch;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 class MultiFaceTest {
 

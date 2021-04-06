@@ -2,7 +2,7 @@
 
 This sample shows how to generate more strongly typed wrapper classes
 for the JACOB automation classes. These are pure java classes which
-extend com.jacob.com.Dispatch and delegate all the methods to the
+extend com.sap.smb.sbo.wrapper.com.Dispatch and delegate all the methods to the
 unedrlying IDispatch pointer. This methodology is similar to the way
 MFC does automation wrappers, rather than using the @com directives
 to invisibly delegate the calls, as the Microsoft VM does.
@@ -32,7 +32,7 @@ The code for the Connection constructor is shown here:
     super("ADODB.Connection");
   }
 ```
-it simply delegates to the com.jacob.com.Dispatch constructor which
+it simply delegates to the com.sap.smb.sbo.wrapper.com.Dispatch constructor which
 takes a ProgID.
 
 Since I don't have a tool like JACTIVEX yet to create the wrappers

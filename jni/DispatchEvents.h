@@ -29,9 +29,9 @@ extern "C" {
 /*
  * Class:     com_jacob_com_DispatchEvents
  * Method:    init3
- * Signature: (Lcom/jacob/com/Dispatch;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
+ * Signature: (Lcom/sap/smb/sbo/wrapper/com/Dispatch;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_DispatchEvents_init3
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchEvents_init3
   (JNIEnv *, jobject, jobject, jobject, jstring, jstring);
 
 /*
@@ -39,7 +39,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_DispatchEvents_init3
  * Method:    release
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_DispatchEvents_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchEvents_release
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus

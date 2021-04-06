@@ -1,11 +1,11 @@
-package com.jacob.samples.servlet;
+package com.sap.smb.sbo.wrapper.samples.servlet;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 
-import com.jacob.com.*;
-import com.jacob.activeX.*;
+import com.sap.smb.sbo.wrapper.com.*;
+import com.sap.smb.sbo.wrapper.activeX.*;
 
 public class JacobScript extends javax.servlet.http.HttpServlet 
 {

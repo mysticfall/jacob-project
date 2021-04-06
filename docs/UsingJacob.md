@@ -4,7 +4,7 @@ Jacob is a Java library that lets Java applications communicate with Microsoft W
 
 ## The Jacob Packages
 
-The JACOB jar contains two main packages: the `com.jacob.com.*`> package and the `com.jacob.activeX` package. The `com.jacob.com.*` package contains classes map very closely to the com dispatch model with the `com.jacob.com.Dispatch` acting as the primary communication class. Dispatch operate as a function library with a set of static methods that map very closely to the C++ Dispatch APIs provided to the COM layer.`com.jacob.activex.ActiveXComponent` can be used in place of Dispatch to provide a more object like API. The only exception to this guideline is that the `ActiveXComponent` class is always used to make the initial connection to the target dll/COM component.
+The JACOB jar contains two main packages: the `com.sap.smb.sbo.wrapper.com.*`> package and the `com.sap.smb.sbo.wrapper.activeX` package. The `com.sap.smb.sbo.wrapper.com.*` package contains classes map very closely to the com dispatch model with the `com.sap.smb.sbo.wrapper.com.Dispatch` acting as the primary communication class. Dispatch operate as a function library with a set of static methods that map very closely to the C++ Dispatch APIs provided to the COM layer.`com.sap.smb.sbo.wrapper.activex.ActiveXComponent` can be used in place of Dispatch to provide a more object like API. The only exception to this guideline is that the `ActiveXComponent` class is always used to make the initial connection to the target dll/COM component.
 
 ***
 
@@ -87,16 +87,16 @@ This library supports several different command line options:
 <tr>
 <td>   </td>
 <td valign="top">
- com.jacob.autogc
+ com.sap.smb.sbo.wrapper.autogc
 </td>
 <td>Determines if automatic garbage collection is enabled. This is the only way to free up objects created in event callbacks. Automatic garbage collection , based on Java gc rules, garbage collection can be enabled via the `com.java.autogc` command line option. _This feature was added in release 1.9 is not fully debugged._There are real reasons for managing the lifetime of JacobObjects on a per thread basis. Jacob normally manages the the com/Java object lifetime as described in the [JacobComLifetime.html](JacobComLifetime.html) document. Some users have run into situations where they wish to try and let the Java GC lifetime manage the lifetime of objects. This seems to usually be tied to long running threads or to objects created as part of event callbacks. Code was added to let users try and let the JVM manage the object life cycles even though the [JacobComLifetime.html](JacobComLifetime.html) document says this is a bad idea. Added 1.9.This value is cached at startup and cannot be changed on-the-fly via `System.setProperty();`The default value is _false_Example: `-Dcom.jacob.autogc=false`</td>
 </tr>
 <tr>
 <td>   </td>
 <td valign="top">
- com.jacob.includeAllClassesInROT
+ com.sap.smb.sbo.wrapper.includeAllClassesInROT
 </td>
-<td>Acts as master switch for and <class_name>.PutInROT. This property determines if the (experimental) PutInROT property is even checked. It was added in version 1.15 because the property check in PutInROT brok applets because they are not allowed to check system properties at run time. com.jacob.includeAllClassesInROT is checked at class initialization which is allowed.
+<td>Acts as master switch for and <class_name>.PutInROT. This property determines if the (experimental) PutInROT property is even checked. It was added in version 1.15 because the property check in PutInROT brok applets because they are not allowed to check system properties at run time. com.sap.smb.sbo.wrapper.includeAllClassesInROT is checked at class initialization which is allowed.
 
 The default value of this flag is _true_ which matches all behavior prior to 1.13 and the default behavior for 1.13 on
 
@@ -108,7 +108,7 @@ Setting this flag to false causes Jacob to check the and <class_name>.PutInROT p
 <td valign="top">
  <class_name>.PutInROT
 </td>
-<td>Lets a program specify that instances of certain classes are to not be inserted into the ROT. This experimental (1.13) feature provides a mechanism for freeing VariantViaEvent objects that are created in Event threads. There is normally no way to free those objects because the thread terminates outside of any normally MTA/STA Startup/Teardown code. Each event occurs in a new thread and creates a new ROT entry so they grow without bounds.This option may cause VM crashes in certain situations where windows memory is freed outside of the thread it was created in but empirical evidence shows there are situations where this great reduces the long running memory footprint of applications that process a lot of events. _This function is still experimental_. The functionality was added 1.13\. Some of this overlaps the experimental `com.jacob.autogc` introduced in 1.9\. See the ROT.java test program for an example of the effects of this option.This value is checked every time and can be changed on-the-fly via `System.setProperty();`Example: `System.setProperty("com.jacob.com.VariantViaVariant.PutInROT","false");`  
+<td>Lets a program specify that instances of certain classes are to not be inserted into the ROT. This experimental (1.13) feature provides a mechanism for freeing VariantViaEvent objects that are created in Event threads. There is normally no way to free those objects because the thread terminates outside of any normally MTA/STA Startup/Teardown code. Each event occurs in a new thread and creates a new ROT entry so they grow without bounds.This option may cause VM crashes in certain situations where windows memory is freed outside of the thread it was created in but empirical evidence shows there are situations where this great reduces the long running memory footprint of applications that process a lot of events. _This function is still experimental_. The functionality was added 1.13\. Some of this overlaps the experimental `com.sap.smb.sbo.wrapper.autogc` introduced in 1.9\. See the ROT.java test program for an example of the effects of this option.This value is checked every time and can be changed on-the-fly via `System.setProperty();`Example: `System.setProperty("com.sap.smb.sbo.wrapper.com.VariantViaVariant.PutInROT","false");`  
 Example: `-Dcom.jacob.com.VariantViaVariant.PutInROT=false`</td>
 </tr>
 <tr>
@@ -119,7 +119,7 @@ Example: `-Dcom.jacob.com.VariantViaVariant.PutInROT=false`</td>
 <tr>
 <td>   </td>
 <td valign="top">
- com.jacob.debug
+ com.sap.smb.sbo.wrapper.debug
 </td>
 <td>Determines if debug output is enabled to standard out.This value is cached at startup and cannot be changed on-the-fly via `System.setProperty();`The default value is **false**Example: `-Dcom.jacob.debug=false`</td>
 </tr>

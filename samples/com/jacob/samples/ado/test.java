@@ -1,6 +1,6 @@
 package com.jacob.samples.ado;
 
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 public class test {
 	public static void printRS(Recordset rs) {

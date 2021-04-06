@@ -1,151 +1,151 @@
 Manifest-Version: 1.0
 
-Name: ./com/jacob/activeX/ActiveXComponent.class
+Name: ./com/sap/smb/sbo/wrapper/activeX/ActiveXComponent.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: qqewKW8c2W7aSvB4Ob/bMbCPeFI=
 MD5-Digest: EZs0WpbDBV5Id5XRw2tbtg==
 
-Name: ./com/jacob/activeX/ActiveXComponent.java
+Name: ./com/sap/smb/sbo/wrapper/activeX/ActiveXComponent.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: IeJoOZ9U4LtHuqyqJGKG24nDTYw=
 MD5-Digest: Qqf2RAOc0xBTG8dGIyA2+w==
 
-Name: ./com/jacob/com/ComException.class
+Name: ./com/sap/smb/sbo/wrapper/com/ComException.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: fuWzbhsBKLBjPtk5pvgVzskMFz4=
 MD5-Digest: vwLlwRM/J9NYONB/UVw1AA==
 
-Name: ./com/jacob/com/ComException.java
+Name: ./com/sap/smb/sbo/wrapper/com/ComException.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 9HsO+/DGzYdZtFDK+Yi6SyEo29I=
 MD5-Digest: tHiTxIfngQHjEXPzVC31pA==
 
-Name: ./com/jacob/com/ComFailException.class
+Name: ./com/sap/smb/sbo/wrapper/com/ComFailException.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: dghV0kFmeXaebK73wRAyBNZsfeM=
 MD5-Digest: EmfTcOZd7lFdNX+ZZIGufA==
 
-Name: ./com/jacob/com/ComFailException.java
+Name: ./com/sap/smb/sbo/wrapper/com/ComFailException.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: yIS8kOUyyl2ymTHxb/8Za4ktjsw=
 MD5-Digest: sdqsHsk9p4XXX5kfvQOQNg==
 
-Name: ./com/jacob/com/ComThread.class
+Name: ./com/sap/smb/sbo/wrapper/com/ComThread.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: J+KEmDJYSMA2VXg8smZpLFQYAuc=
 MD5-Digest: wnPiLbEgp7GC4sMVsQ1eWg==
 
-Name: ./com/jacob/com/ComThread.java
+Name: ./com/sap/smb/sbo/wrapper/com/ComThread.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: q0K2wuQ+be8Qrrai/Ui1BTMeFeo=
 MD5-Digest: eH6GkFkD3A3PrX1cZJWr6w==
 
-Name: ./com/jacob/com/Dispatch.class
+Name: ./com/sap/smb/sbo/wrapper/com/Dispatch.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: tYSc84+VUMMWYt7hrLDtcnINNUI=
 MD5-Digest: etVQxCE1JEN1rYCc5ZA79A==
 
-Name: ./com/jacob/com/Dispatch.java
+Name: ./com/sap/smb/sbo/wrapper/com/Dispatch.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: Q95eP1KW/Z/ICzzeaNDCFUIG408=
 MD5-Digest: IovIOD5G/XY7qFAHViNeng==
 
-Name: ./com/jacob/com/DispatchEvents.class
+Name: ./com/sap/smb/sbo/wrapper/com/DispatchEvents.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 7cgrmVJc18T/hRvT3931tQzVa5s=
 MD5-Digest: CtihQf0ka9OChKX+OnKucQ==
 
-Name: ./com/jacob/com/DispatchEvents.java
+Name: ./com/sap/smb/sbo/wrapper/com/DispatchEvents.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 5MwAZmktJFp7rq23Lz/VG1/ULk4=
 MD5-Digest: 2haKHCBa7UXfl8HCSPEyQQ==
 
-Name: ./com/jacob/com/DispatchProxy.class
+Name: ./com/sap/smb/sbo/wrapper/com/DispatchProxy.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: xDGCGyw+8G/kxFFOQtQo3rbhDN8=
 MD5-Digest: +5n2WPrM0Jj0FauyuctPMQ==
 
-Name: ./com/jacob/com/DispatchProxy.java
+Name: ./com/sap/smb/sbo/wrapper/com/DispatchProxy.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 4NGdFabt0CZL8y56A1x/AEat6/o=
 MD5-Digest: Wd9zhjmACcUxZ3gqdWtB2w==
 
-Name: ./com/jacob/com/EnumVariant.class
+Name: ./com/sap/smb/sbo/wrapper/com/EnumVariant.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: ft/EfZ1xwI/J07yz6oxla2jKZFM=
 MD5-Digest: zRYy+0tuDsAQ7SCOJxgx5A==
 
-Name: ./com/jacob/com/EnumVariant.java
+Name: ./com/sap/smb/sbo/wrapper/com/EnumVariant.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 3biekksAd50gb6GRfpefO2PpS6c=
 MD5-Digest: zlu6oH2HFI//sGTexAv9GQ==
 
-Name: ./com/jacob/com/JacobObject.class
+Name: ./com/sap/smb/sbo/wrapper/com/sap/smb/sbo/wrapperObject.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 9uw+e0Wxha1A6tp6PFQE1JMJkvQ=
 MD5-Digest: D37EFI7kTv9NEnsyQcsXsA==
 
-Name: ./com/jacob/com/JacobObject.java
+Name: ./com/sap/smb/sbo/wrapper/com/sap/smb/sbo/wrapperObject.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: TqJDUM7Ujxt5/zAGSG9uCoKcJ4U=
 MD5-Digest: oD0tL8WPPCN3jF59jfd/yA==
 
-Name: ./com/jacob/com/MainSTA.class
+Name: ./com/sap/smb/sbo/wrapper/com/MainSTA.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 3WKAHdSq2yTa/lqHgyOTo6vqvnk=
 MD5-Digest: h0kY/3xCUs0uCyhWUL+DWQ==
 
-Name: ./com/jacob/com/MainSTA.java
+Name: ./com/sap/smb/sbo/wrapper/com/MainSTA.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: pDIgNuK9H9KhKQEZIMIgM44nDo8=
 MD5-Digest: p/CDI6V3KgdOViQQ6/oR0g==
 
-Name: ./com/jacob/com/ROT.class
+Name: ./com/sap/smb/sbo/wrapper/com/ROT.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: bEQuGPBbOn8HlXMmcLQCRh0BlYs=
 MD5-Digest: rCXiBlficXaJbCoFMCeoJg==
 
-Name: ./com/jacob/com/ROT.java
+Name: ./com/sap/smb/sbo/wrapper/com/ROT.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: K6WVkJuFZNjgow/o4/1pTyKu2Tk=
 MD5-Digest: eOCwqvCPVk+haZ7WFzEJOg==
 
-Name: ./com/jacob/com/SafeArray.class
+Name: ./com/sap/smb/sbo/wrapper/com/SafeArray.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: AIqtFq0miAVrMUY0HZUnXuhl284=
 MD5-Digest: TiPLaOJAMTzTVP2a2AsX0A==
 
-Name: ./com/jacob/com/SafeArray.java
+Name: ./com/sap/smb/sbo/wrapper/com/SafeArray.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: CGBlCL952tC//MTG+XxqSOQh/hI=
 MD5-Digest: pf25bH4uo0LZOzz7utDa8Q==
 
-Name: ./com/jacob/com/STA.class
+Name: ./com/sap/smb/sbo/wrapper/com/STA.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 6cqSEZm+8kVkAO4Vnc5G04qCrCE=
 MD5-Digest: 7O16Je2NaryCebJZ28U20A==
 
-Name: ./com/jacob/com/STA.java
+Name: ./com/sap/smb/sbo/wrapper/com/STA.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: S0EbhtSPEAv9fGOaTNBymxmZthM=
 MD5-Digest: 9fcj8YmMFCCfB8M5eF7lPA==
 
-Name: ./com/jacob/com/Variant.class
+Name: ./com/sap/smb/sbo/wrapper/com/Variant.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: ea5nat308Pg7cxcJdywpqL++HiM=
 MD5-Digest: 6/TukZAwtC9UOUArjcpTXg==
 
-Name: ./com/jacob/com/Variant.java
+Name: ./com/sap/smb/sbo/wrapper/com/Variant.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: psnbnw0M+2egeuqpbf2u1C7I/EY=
 MD5-Digest: iuuq5W1sFXeT269RJC7U6w==
 
-Name: ./com/jacob/com/WrongThreadException.class
+Name: ./com/sap/smb/sbo/wrapper/com/WrongThreadException.class
 Digest-Algorithms: SHA MD5 
 SHA-Digest: 55DxaZjMfzYE9MTCKZ8VPgpjVLc=
 MD5-Digest: 9uygPT4WdJg8N6Yo/t0tkA==
 
-Name: ./com/jacob/com/WrongThreadException.java
+Name: ./com/sap/smb/sbo/wrapper/com/WrongThreadException.java
 Digest-Algorithms: SHA MD5 
 SHA-Digest: PPQzELKIkTeQJfGTBUfUonPdSnc=
 MD5-Digest: bNwuGE+cW1Z9+pWnI3r/Bg==

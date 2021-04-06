@@ -47,9 +47,9 @@ IDispatch *extractDispatch(JNIEnv *env, jobject arg)
  * This method finds an interface rooted on the passed in dispatch object.
  * This creates a new Dispatch object so it is NOT reliable 
  * in the event callback thread of a JWS client where the root class loader
- * does not have com.jacob.com.Dispatch in its classpath
+ * does not have com.sap.smb.sbo.wrapper.com.Dispatch in its classpath
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_QueryInterface
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_QueryInterface
   (JNIEnv *env, jobject _this, jstring _iid)
 {
   // get the current IDispatch
@@ -75,7 +75,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_QueryInterface
     return NULL;
   }
 
-  jclass autoClass = env->FindClass("com/jacob/com/Dispatch");
+  jclass autoClass = env->FindClass("com/sap/smb/sbo/wrapper/com/Dispatch");
   jmethodID autoCons = env->GetMethodID(autoClass, "<init>", "(J)V");
   // construct a Dispatch object to return
   // I am copying the pointer to java
@@ -91,7 +91,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_QueryInterface
  * and connects to it.  does special code if the progid 
  * is of the alternate format (with ":")
  **/
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_createInstanceNative
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_createInstanceNative
   (JNIEnv *env, jobject _this, jstring _progid)
 {
   jclass clazz = env->GetObjectClass(_this);
@@ -158,7 +158,7 @@ doDisp:
  * attempts to connect to an running instance of the requested program
  * This exists solely for the factory method connectToActiveInstance.
  **/
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_getActiveInstanceNative
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_getActiveInstanceNative
   (JNIEnv *env, jobject _this, jstring _progid)
 {
   jclass clazz = env->GetObjectClass(_this);
@@ -201,7 +201,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_getActiveInstanceNative
  * starts up a new instance of the requested program (progId).  
  * This exists solely for the factory method connectToActiveInstance.
  **/
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_coCreateInstanceNative
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_coCreateInstanceNative
   (JNIEnv *env, jobject _this, jstring _progid)
 {
   jclass clazz = env->GetObjectClass(_this);
@@ -242,7 +242,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_coCreateInstanceNative
 /**
  * release method
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_do_release
   (JNIEnv *env, jobject _this)
 {
   jclass clazz = env->GetObjectClass(_this);
@@ -266,7 +266,7 @@ name2ID(IDispatch *pIDispatch, const char *prop, DISPID *dispid, long lcid)
   return hresult;
 }
 
-JNIEXPORT jintArray JNICALL Java_com_jacob_com_Dispatch_getIDsOfNames
+JNIEXPORT jintArray JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_getIDsOfNames
   (JNIEnv *env, jclass clazz, jobject disp, jint lcid, jobjectArray names)
 {
   IDispatch *pIDispatch = extractDispatch(env, disp);
@@ -419,7 +419,7 @@ static wchar_t* CreateErrorMsgFromInfo(HRESULT inResult, EXCEPINFO* ioInfo,
 
 #define SETNOPARAMS(dp) SETDISPPARAMS(dp, 0, NULL, 0, NULL)
 
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_invokev
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_invokev
   (JNIEnv *env, jclass clazz,
   jobject disp, jstring name, jint dispid,
   jint lcid, jint wFlags, jobjectArray vArg, jintArray uArgErr)
@@ -464,7 +464,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_invokev
     }
   }
   // prepare a new return value
-  jclass variantClass = env->FindClass("com/jacob/com/Variant");
+  jclass variantClass = env->FindClass("com/sap/smb/sbo/wrapper/com/Variant");
   jmethodID variantCons = 
       env->GetMethodID(variantClass, "<init>", "()V");
   // construct a variant to return
@@ -570,7 +570,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_invokev
 /*
  * Wait method added so folks could wait until a com server terminated
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_Dispatch_hasExited
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_hasExited
 		(JNIEnv *env,jclass clazz, jobject disp, jint dispid, jint lcid) {
 	IDispatch *pIDispatch = extractDispatch(env, disp);
 	if (!pIDispatch) {

@@ -20,8 +20,8 @@
 #include <jni.h>
 /* Header for class com_jacob_com_ComThread */
 
-#ifndef _Included_com_jacob_com_ComThread
-#define _Included_com_jacob_com_ComThread
+#ifndef _Included_com_sap_smb_sbo_wrapper_com_ComThread
+#define _Included_com_sap_smb_sbo_wrapper_com_ComThread
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,7 +30,7 @@ extern "C" {
  * Method:    doCoInitialize
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_ComThread_doCoInitialize
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_ComThread_doCoInitialize
   (JNIEnv *, jclass, jint);
 
 /*
@@ -38,7 +38,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_ComThread_doCoInitialize
  * Method:    doCoUninitialize
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_ComThread_doCoUninitialize
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_ComThread_doCoUninitialize
   (JNIEnv *, jclass);
 
 

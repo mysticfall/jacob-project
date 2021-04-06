@@ -1,8 +1,8 @@
 package com.jacob.samples.office;
 
-import com.jacob.activeX.ActiveXComponent;
-import com.jacob.com.ComFailException;
-import com.jacob.com.Dispatch;
+import com.sap.smb.sbo.wrapper.activeX.ActiveXComponent;
+import com.sap.smb.sbo.wrapper.com.ComFailException;
+import com.sap.smb.sbo.wrapper.com.Dispatch;
 
 /**
  * Snippet to show Visio print dialog

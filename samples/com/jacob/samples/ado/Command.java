@@ -1,7 +1,7 @@
 package com.jacob.samples.ado;
 
-import com.jacob.com.Dispatch;
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.com.Dispatch;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 /**
  * Custom dispatch object to make it easy for us to provide application specific

@@ -20,8 +20,8 @@
 #include <jni.h>
 /* Header for class STA */
 
-#ifndef _Included_com_jacob_com_STA
-#define _Included_com_jacob_com_STA
+#ifndef _Included_com_sap_smb_sbo_wrapper_com_STA
+#define _Included_com_sap_smb_sbo_wrapper_com_STA
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,7 +30,7 @@ extern "C" {
  * Method:    doMessagePump
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_STA_doMessagePump
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_STA_doMessagePump
   (JNIEnv *, jobject);
 
 /*
@@ -38,7 +38,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_STA_doMessagePump
  * Method:    quitMessagePump
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_STA_quitMessagePump
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_STA_quitMessagePump
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus

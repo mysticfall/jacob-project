@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
-import com.jacob.com.LibraryLoader;
+import com.sap.smb.sbo.wrapper.com.LibraryLoader;
 
 /**
  * It is sometimes necessary to run Jacob without being able to install the dll

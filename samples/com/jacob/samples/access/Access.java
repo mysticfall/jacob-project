@@ -19,10 +19,10 @@
  */
 package com.jacob.samples.access;
 
-import com.jacob.activeX.ActiveXComponent;
-import com.jacob.com.ComThread;
-import com.jacob.com.Dispatch;
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.activeX.ActiveXComponent;
+import com.sap.smb.sbo.wrapper.com.ComThread;
+import com.sap.smb.sbo.wrapper.com.Dispatch;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 /**
  * May need to run with some command line options (including from inside
@@ -48,7 +48,7 @@ class Access {
 		// Dispatch db = open(ax, ".\\sample2.mdb");
 		// this works when running in eclipse because the test cases run pwd
 		// project root
-		Dispatch db = open(ax, "samples/com/jacob/samples/access/sample2.mdb");
+		Dispatch db = open(ax, "samples/com/sap/smb/sbo/wrapper/samples/access/sample2.mdb");
 		String sql = "select * from MainTable";
 		// make a temporary querydef
 		Dispatch qd = Dispatch.call(db, "CreateQueryDef", "").toDispatch();

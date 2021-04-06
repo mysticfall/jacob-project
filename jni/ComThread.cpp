@@ -31,14 +31,14 @@
 extern "C" 
 {
 
-JNIEXPORT void JNICALL Java_com_jacob_com_ComThread_doCoInitialize
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_ComThread_doCoInitialize
   (JNIEnv *env, jclass cls, jint mode)
 {
   int threadModel = mode;
   CoInitializeEx(NULL, threadModel);
 }
 
-JNIEXPORT void JNICALL Java_com_jacob_com_ComThread_doCoUninitialize
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_ComThread_doCoUninitialize
   (JNIEnv *env, jclass cls)
 {
   CoUninitialize();

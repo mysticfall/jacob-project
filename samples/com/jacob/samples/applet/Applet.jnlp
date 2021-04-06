@@ -20,7 +20,7 @@
 		
 	<applet-desc 
          	name="JacobTestApplet"
-         	main-class="com.jacob.samples.applet.JacobTestApplet"
+         	main-class="com.sap.smb.sbo.wrapper.samples.applet.JacobTestApplet"
          	width="400"
          	height="50">
 	</applet-desc>

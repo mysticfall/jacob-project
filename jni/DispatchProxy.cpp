@@ -41,7 +41,7 @@ IStream *extractStream(JNIEnv *env, jobject arg)
   return v;
 }
 
-JNIEXPORT void JNICALL Java_com_jacob_com_DispatchProxy_MarshalIntoStream
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchProxy_MarshalIntoStream
   (JNIEnv *env, jobject _this, jobject disp)
 {
   IDispatch *pIDispatch = extractDispatch(env, disp);
@@ -60,7 +60,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_DispatchProxy_MarshalIntoStream
   env->SetLongField(_this, ajf, (jlong)ps);
 }
 
-JNIEXPORT jobject JNICALL Java_com_jacob_com_DispatchProxy_MarshalFromStream
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchProxy_MarshalFromStream
   (JNIEnv *env, jobject _this)
 {
   IStream *ps = extractStream(env, _this);
@@ -82,7 +82,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_DispatchProxy_MarshalFromStream
     ThrowComFail(env, "Could not Marshal Dispatch from IStream", hr);
     return NULL;
   }
-  jclass autoClass = env->FindClass("com/jacob/com/Dispatch");
+  jclass autoClass = env->FindClass("com/sap/smb/sbo/wrapper/com/Dispatch");
   jmethodID autoCons = env->GetMethodID(autoClass, "<init>", "(J)V");
   // construct a Dispatch object to return
   // I am copying the pointer to java
@@ -92,7 +92,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_DispatchProxy_MarshalFromStream
   return newAuto;
 }
 
-JNIEXPORT void JNICALL Java_com_jacob_com_DispatchProxy_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchProxy_release
   (JNIEnv *env, jobject _this)
 {
   IStream *ps =  extractStream(env, _this);

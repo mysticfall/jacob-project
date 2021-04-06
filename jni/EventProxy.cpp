@@ -202,12 +202,12 @@ STDMETHODIMP EventProxy::Invoke(DISPID dispID, REFIID riid,
 		if (env->ExceptionOccurred()) { env->ExceptionDescribe(); env->ExceptionClear();}
 	//printf("Invoke: Got sink class\n");
     jmethodID invokeMethod;
-    invokeMethod = env->GetMethodID(javaSinkClass, "invoke", "(Ljava/lang/String;[Lcom/jacob/com/Variant;)Lcom/jacob/com/Variant;");
+    invokeMethod = env->GetMethodID(javaSinkClass, "invoke", "(Ljava/lang/String;[Lcom/sap/smb/sbo/wrapper/com/Variant;)Lcom/sap/smb/sbo/wrapper/com/Variant;");
 		if (env->ExceptionOccurred()) { env->ExceptionDescribe(); env->ExceptionClear();}
     jstring eventMethodNameAsString = env->NewStringUTF(eventMethodName);
 	//printf("Invoke: Got method name\n");
 	// now do what we need for the variant
-    jmethodID getVariantMethod = env->GetMethodID(javaSinkClass, "getVariant", "()Lcom/jacob/com/Variant;");
+    jmethodID getVariantMethod = env->GetMethodID(javaSinkClass, "getVariant", "()Lcom/sap/smb/sbo/wrapper/com/Variant;");
 		if (env->ExceptionOccurred()) { env->ExceptionDescribe(); env->ExceptionClear();}
 	//printf("Invoke: Found way too getVariant\n");
     jobject aVariantObj = env->CallObjectMethod(javaSinkObj, getVariantMethod); 
@@ -251,7 +251,7 @@ STDMETHODIMP EventProxy::Invoke(DISPID dispID, REFIID riid,
 		if (env->ExceptionOccurred()) { env->ExceptionDescribe(); env->ExceptionClear();}
 	// don't need the first variant we created to get the class
 	// SF 1689061 change not accepted but put in as comment for later reminder
-    //Java_com_jacob_com_Variant_release(env, aVariantObj);
+    //Java_com_sap_smb_sbo_wrapper_com_Variant_release(env, aVariantObj);
 	env->DeleteLocalRef(aVariantObj);
 		if (env->ExceptionOccurred()) { env->ExceptionDescribe(); env->ExceptionClear();}
 
@@ -264,7 +264,7 @@ STDMETHODIMP EventProxy::Invoke(DISPID dispID, REFIID riid,
 		convertJavaVariant(java, com);
 		// SF 1689061 change not accepted but put in as comment for later reminder
 		// note that a related fix has been submitted in SF 3435567 to do this in zeroVariant() method
-		//Java_com_jacob_com_Variant_release(env, arg);
+		//Java_com_sap_smb_sbo_wrapper_com_Variant_release(env, arg);
 		zeroVariant(env, arg);
 		env->DeleteLocalRef(arg);
     }

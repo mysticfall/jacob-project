@@ -20,25 +20,25 @@
 #include <jni.h>
 /* Header for class com_jacob_com_DispatchProxy */
 
-#ifndef _Included_com_jacob_com_DispatchProxy
-#define _Included_com_jacob_com_DispatchProxy
+#ifndef _Included_com_sap_smb_sbo_wrapper_com_DispatchProxy
+#define _Included_com_sap_smb_sbo_wrapper_com_DispatchProxy
 #ifdef __cplusplus
 extern "C" {
 #endif
 /*
  * Class:     com_jacob_com_DispatchProxy
  * Method:    MarshalIntoStream
- * Signature: (Lcom/jacob/com/Dispatch;)V
+ * Signature: (Lcom/sap/smb/sbo/wrapper/com/Dispatch;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_DispatchProxy_MarshalIntoStream
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchProxy_MarshalIntoStream
   (JNIEnv *, jobject, jobject);
 
 /*
  * Class:     com_jacob_com_DispatchProxy
  * Method:    MarshalFromStream
- * Signature: ()Lcom/jacob/com/Dispatch;
+ * Signature: ()Lcom/sap/smb/sbo/wrapper/com/Dispatch;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_DispatchProxy_MarshalFromStream
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchProxy_MarshalFromStream
   (JNIEnv *, jobject);
 
 /*
@@ -46,7 +46,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_DispatchProxy_MarshalFromStream
  * Method:    release
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_DispatchProxy_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_DispatchProxy_release
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus

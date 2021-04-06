@@ -1,5 +1,7 @@
 Jacob is a Java library that lets Java applications communicate with Microsoft Windows DLLs or COM libraries. It does this through the use of a custom DLL that the Jacob Java classes communicate with via JNI. The Java library and dll isolate the Java developer from the underlying windows libraries so that the Java developer does not have to write custom JNI code.Jacob is not used for creating ActiveX plugins or other modules that live inside of Microsoft Windows applications.
 
+This is a fork of the original project to make it serve as a drop-in replacement of sbowrapper.jar which is merely a rebranded older version of JACOB, bundled with SAP B1.
+
 ## Repositories
 JACOB (Java-COM bridge) 
 * Source was hosted on Sourceforge for for over a decade on the [jacob-project Sourceforge Repository](http://sourceforge.net/project/jacob-project)

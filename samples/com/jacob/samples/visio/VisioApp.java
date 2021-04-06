@@ -2,9 +2,9 @@ package com.jacob.samples.visio;
 
 import java.io.File;
 
-import com.jacob.activeX.ActiveXComponent;
-import com.jacob.com.DispatchEvents;
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.activeX.ActiveXComponent;
+import com.sap.smb.sbo.wrapper.com.DispatchEvents;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 /**
  * Created as part of sourceforge 1386454 to demonstrate returning values in

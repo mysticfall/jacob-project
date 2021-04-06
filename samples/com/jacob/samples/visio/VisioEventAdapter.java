@@ -1,6 +1,6 @@
 package com.jacob.samples.visio;
 
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 /**
  * Created as part of sourceforge 1386454 to demonstrate returning values in

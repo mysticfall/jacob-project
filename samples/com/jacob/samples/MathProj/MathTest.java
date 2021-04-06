@@ -1,9 +1,9 @@
 package com.jacob.samples.MathProj;
 
-import com.jacob.activeX.ActiveXComponent;
-import com.jacob.com.Dispatch;
-import com.jacob.com.DispatchEvents;
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.activeX.ActiveXComponent;
+import com.sap.smb.sbo.wrapper.com.Dispatch;
+import com.sap.smb.sbo.wrapper.com.DispatchEvents;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 /**
  * This example uses the MathTest sample VB COM DLL under the MathProj directory

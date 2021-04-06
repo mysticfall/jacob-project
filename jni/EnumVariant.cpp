@@ -45,7 +45,7 @@ IEnumVARIANT* extractEnumVariant(JNIEnv* env, jobject arg)
 }
 
 JNIEXPORT jint JNICALL
-Java_com_jacob_com_EnumVariant_Next(JNIEnv* env, jobject _this, jobjectArray vars)
+Java_com_sap_smb_sbo_wrapper_com_EnumVariant_Next(JNIEnv* env, jobject _this, jobjectArray vars)
 {
   IEnumVARIANT* self = extractEnumVariant(env, _this);
 	//printf("self=%x\n", self);
@@ -77,7 +77,7 @@ Java_com_jacob_com_EnumVariant_Next(JNIEnv* env, jobject _this, jobjectArray var
 
   // prepare a new return value array
   //
-  jclass    clazz = env->FindClass("com/jacob/com/Variant");
+  jclass    clazz = env->FindClass("com/sap/smb/sbo/wrapper/com/Variant");
   jmethodID ctor  = env->GetMethodID(clazz, "<init>", "()V");
 
   for(ULONG idx = 0; idx < fetchCount; ++idx)
@@ -99,7 +99,7 @@ Java_com_jacob_com_EnumVariant_Next(JNIEnv* env, jobject _this, jobjectArray var
 }
 
 JNIEXPORT void JNICALL
-Java_com_jacob_com_EnumVariant_release(JNIEnv* env, jobject _this)
+Java_com_sap_smb_sbo_wrapper_com_EnumVariant_release(JNIEnv* env, jobject _this)
 {
   IEnumVARIANT* self = extractEnumVariant(env, _this);
   if(self != NULL)
@@ -113,7 +113,7 @@ Java_com_jacob_com_EnumVariant_release(JNIEnv* env, jobject _this)
 }
 
 JNIEXPORT void JNICALL
-Java_com_jacob_com_EnumVariant_Reset(JNIEnv* env, jobject _this)
+Java_com_sap_smb_sbo_wrapper_com_EnumVariant_Reset(JNIEnv* env, jobject _this)
 {
   IEnumVARIANT* self = extractEnumVariant(env, _this);
   if(self == NULL)
@@ -125,7 +125,7 @@ Java_com_jacob_com_EnumVariant_Reset(JNIEnv* env, jobject _this)
 }
 
 JNIEXPORT void JNICALL
-Java_com_jacob_com_EnumVariant_Skip(JNIEnv* env, jobject _this, jint count)
+Java_com_sap_smb_sbo_wrapper_com_EnumVariant_Skip(JNIEnv* env, jobject _this, jint count)
 {
   IEnumVARIANT* self = extractEnumVariant(env, _this);
   if(self == NULL)

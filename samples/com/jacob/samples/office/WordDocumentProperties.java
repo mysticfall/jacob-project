@@ -2,10 +2,10 @@ package com.jacob.samples.office;
 
 import java.io.File;
 
-import com.jacob.activeX.ActiveXComponent;
-import com.jacob.com.ComException;
-import com.jacob.com.Dispatch;
-import com.jacob.com.Variant;
+import com.sap.smb.sbo.wrapper.activeX.ActiveXComponent;
+import com.sap.smb.sbo.wrapper.com.ComException;
+import com.sap.smb.sbo.wrapper.com.Dispatch;
+import com.sap.smb.sbo.wrapper.com.Variant;
 
 /**
  * Submitted to the Jacob SourceForge web site as a sample 3/2005
@@ -142,7 +142,7 @@ public class WordDocumentProperties {
 
 			// Open the word doc
 			File doc = new File(
-					"samples/com/jacob/samples/office/TestDocument.doc");
+					"samples/com/sap/smb/sbo/wrapper/samples/office/TestDocument.doc");
 			jacTest.open(doc.getAbsolutePath());
 
 			// Set Custom Properties

@@ -32,7 +32,7 @@ extern "C"
 
 void ThrowComFail(JNIEnv *env, const char* desc, jint hr)
 {
-  jclass failClass = env->FindClass("com/jacob/com/ComFailException");
+  jclass failClass = env->FindClass("com/sap/smb/sbo/wrapper/com/ComFailException");
   // call the constructor that takes hr and message
   jmethodID failCons = 
      env->GetMethodID(failClass, "<init>", "(ILjava/lang/String;)V");
@@ -49,7 +49,7 @@ void ThrowComFailUnicode(JNIEnv *env, const wchar_t* desc, jint hr)
   if (!desc) {
 	  ThrowComFail(env, "Java/COM Error", hr);
   }
-  jclass failClass = env->FindClass("com/jacob/com/ComFailException");
+  jclass failClass = env->FindClass("com/sap/smb/sbo/wrapper/com/ComFailException");
   // call the constructor that takes hr and message
   jmethodID failCons = 
      env->GetMethodID(failClass, "<init>", "(ILjava/lang/String;)V");
@@ -62,7 +62,7 @@ void ThrowComFailUnicode(JNIEnv *env, const wchar_t* desc, jint hr)
 int CheckEnv(JNIEnv *env1, JNIEnv *env2)
 {
   if (env1 != env2) {
-    jclass failClass = env1->FindClass("com/jacob/com/WrongThreadException");
+    jclass failClass = env1->FindClass("com/sap/smb/sbo/wrapper/com/WrongThreadException");
     // call the constructor that takes hr and message
     jmethodID failCons = 
        env1->GetMethodID(failClass, "<init>", "()V");

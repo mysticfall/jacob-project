@@ -28,9 +28,9 @@ extern "C" {
 /*
  * Class:     com_jacob_com_EnumVariant
  * Method:    Next
- * Signature: ([Lcom/jacob/com/Variant;)I
+ * Signature: ([Lcom/sap/smb/sbo/wrapper/com/Variant;)I
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_EnumVariant_Next
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_EnumVariant_Next
   (JNIEnv *, jobject, jobjectArray);
 
 /*
@@ -38,7 +38,7 @@ JNIEXPORT jint JNICALL Java_com_jacob_com_EnumVariant_Next
  * Method:    Release
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_EnumVariant_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_EnumVariant_release
   (JNIEnv *, jobject);
 
 /*
@@ -46,7 +46,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_EnumVariant_release
  * Method:    Reset
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_EnumVariant_Reset
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_EnumVariant_Reset
   (JNIEnv *, jobject);
 
 /*
@@ -54,7 +54,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_EnumVariant_Reset
  * Method:    Skip
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_EnumVariant_Skip
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_EnumVariant_Skip
   (JNIEnv *, jobject, jint);
 
 #ifdef __cplusplus

@@ -28,9 +28,9 @@ extern "C" {
 /*
  * Class:     com_jacob_com_Dispatch
  * Method:    QueryInterface
- * Signature: (Ljava/lang/String;)Lcom/jacob/com/Dispatch;
+ * Signature: (Ljava/lang/String;)Lcom/sap/smb/sbo/wrapper/com/Dispatch;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_QueryInterface
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_QueryInterface
   (JNIEnv *, jobject, jstring);
 
 /*
@@ -38,7 +38,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_QueryInterface
  * Method:    createInstance
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_createInstanceNative
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_createInstanceNative
   (JNIEnv *, jobject, jstring);
 
 /*
@@ -46,7 +46,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_createInstanceNative
  * Method:    getActiveInstance
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_getActiveInstanceNative
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_getActiveInstanceNative
   (JNIEnv *, jobject, jstring);
 
 /*
@@ -54,7 +54,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_getActiveInstanceNative
  * Method:    coCreateInstance
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_coCreateInstanceNative
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_coCreateInstanceNative
   (JNIEnv *, jobject, jstring);
 
 /*
@@ -62,7 +62,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_coCreateInstanceNative
  * Method:    release
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_do_release
   (JNIEnv *, jobject);
 
 /*
@@ -70,7 +70,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Dispatch_release
  * Method:    getIDsOfNames
  * Signature: (Ljava/lang/Object;I[Ljava/lang/String;)[I
  */
-JNIEXPORT jintArray JNICALL Java_com_jacob_com_Dispatch_getIDsOfNames
+JNIEXPORT jintArray JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_getIDsOfNames
   (JNIEnv *, jclass, jobject, jint, jobjectArray);
 
 /*
@@ -78,7 +78,7 @@ JNIEXPORT jintArray JNICALL Java_com_jacob_com_Dispatch_getIDsOfNames
  * Method:    invokev
  * Signature: (Ljava/lang/Object;Ljava/lang/String;III[LVariant;[I)LVariant;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_invokev
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_invokev
   (JNIEnv *, jclass, jobject, jstring, jint, jint, jint, jobjectArray, jintArray);
 
 /*
@@ -86,7 +86,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Dispatch_invokev
  * Method:    wait
  * Signature: (Ljava/lang/Object;I;)I
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_Dispatch_hasExited
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_Dispatch_hasExited
 	(JNIEnv *, jclass, jobject, jint, jint);
 
 #ifdef __cplusplus

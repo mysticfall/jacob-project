@@ -20,8 +20,8 @@
 #include <jni.h>
 /* Header for class com_jacob_com_Variant */
 
-#ifndef _Included_com_jacob_com_Variant
-#define _Included_com_jacob_com_Variant
+#ifndef _Included_com_sap_smb_sbo_wrapper_com_Variant
+#define _Included_com_sap_smb_sbo_wrapper_com_Variant
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -29,9 +29,9 @@ extern "C" {
 /*
  * Class:     com_jacob_com_Variant
  * Method:    toEnumVariant
- * Signature: ()Lcom/jacob/com/EnumVariant;
+ * Signature: ()Lcom/sap/smb/sbo/wrapper/com/EnumVariant;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_toEnumVariant
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_toEnumVariant
   (JNIEnv *, jobject);
 
 /*
@@ -39,7 +39,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_toEnumVariant
  * Method:    putVariantNull
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantNull
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantNull
   (JNIEnv *, jobject);
 
 /*
@@ -47,7 +47,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantNull
  * Method:    cloneIndirect
  * Signature: ()Lcom_jacob_com_Variant;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_cloneIndirect
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_cloneIndirect
   (JNIEnv *, jobject);
 
 /*
@@ -55,7 +55,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_cloneIndirect
  * Method:    putVariantShortRef
  * Signature: (S)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantShortRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantShortRef
   (JNIEnv *, jobject, jshort);
 
 /*
@@ -63,7 +63,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantShortRef
  * Method:    putVariantIntRef
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantIntRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantIntRef
   (JNIEnv *, jobject, jint);
 
 /*
@@ -71,7 +71,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantIntRef
  * Method:    putVariantDoubleRef
  * Signature: (D)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDoubleRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDoubleRef
   (JNIEnv *, jobject, jdouble);
 
 /*
@@ -79,7 +79,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDoubleRef
  * Method:    putVariantDateRef
  * Signature: (D)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDateRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDateRef
   (JNIEnv *, jobject, jdouble);
 
 /*
@@ -87,7 +87,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDateRef
  * Method:    putVariantStringRef
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantStringRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantStringRef
   (JNIEnv *, jobject, jstring);
 
 /*
@@ -95,7 +95,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantStringRef
  * Method:    getVariantShortRef
  * Signature: ()S
  */
-JNIEXPORT jshort JNICALL Java_com_jacob_com_Variant_getVariantShortRef
+JNIEXPORT jshort JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantShortRef
   (JNIEnv *, jobject);
 
 /*
@@ -103,7 +103,7 @@ JNIEXPORT jshort JNICALL Java_com_jacob_com_Variant_getVariantShortRef
  * Method:    getVariantIntRef
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantIntRef
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantIntRef
   (JNIEnv *, jobject);
 
 /*
@@ -111,7 +111,7 @@ JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantIntRef
  * Method:    putVariantShort
  * Signature: (S)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantShort
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantShort
   (JNIEnv *, jobject, jshort);
 
 /*
@@ -119,7 +119,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantShort
  * Method:    getVariantShort
  * Signature: ()S
  */
-JNIEXPORT jshort JNICALL Java_com_jacob_com_Variant_getVariantShort
+JNIEXPORT jshort JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantShort
   (JNIEnv *, jobject);
 
 /*
@@ -127,7 +127,7 @@ JNIEXPORT jshort JNICALL Java_com_jacob_com_Variant_getVariantShort
  * Method:    getVariantDoubleRef
  * Signature: ()D
  */
-JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDoubleRef
+JNIEXPORT jdouble JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantDoubleRef
   (JNIEnv *, jobject);
 
 /*
@@ -135,7 +135,7 @@ JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDoubleRef
  * Method:    getVariantDateRef
  * Signature: ()D
  */
-JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDateRef
+JNIEXPORT jdouble JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantDateRef
   (JNIEnv *, jobject);
 
 /*
@@ -143,7 +143,7 @@ JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDateRef
  * Method:    getStringRef
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_jacob_com_Variant_getVariantStringRef
+JNIEXPORT jstring JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantStringRef
   (JNIEnv *, jobject);
 
 /*
@@ -151,7 +151,7 @@ JNIEXPORT jstring JNICALL Java_com_jacob_com_Variant_getVariantStringRef
  * Method:    com_jacob_com_VariantClear
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_VariantClear
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_VariantClear
   (JNIEnv *, jobject);
 
 /*
@@ -159,7 +159,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_VariantClear
  * Method:    toDispatch
  * Signature: ()LDispatch;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_toVariantDispatch
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_toVariantDispatch
   (JNIEnv *, jobject);
 
 /*
@@ -167,7 +167,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_toVariantDispatch
  * Method:    clone
  * Signature: ()Ljava/lang/Object;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_clone
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_clone
   (JNIEnv *, jobject);
 
 /*
@@ -175,7 +175,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_clone
  * Method:    getVariantInt
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantInt
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantInt
   (JNIEnv *, jobject);
 
 /*
@@ -183,7 +183,7 @@ JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantInt
  * Method:    getVariantDate
  * Signature: ()D
  */
-JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDate
+JNIEXPORT jdouble JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantDate
   (JNIEnv *, jobject);
 
 /*
@@ -191,7 +191,7 @@ JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDate
  * Method:    putVariantInt
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantInt
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantInt
   (JNIEnv *, jobject, jint);
 
 /*
@@ -199,7 +199,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantInt
  * Method:    putVariantDate
  * Signature: (D)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDate
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDate
   (JNIEnv *, jobject, jdouble);
 
 /*
@@ -207,7 +207,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDate
  * Method:    getVariantBoolean
  * Signature: ()Z
  */
-JNIEXPORT jboolean JNICALL Java_com_jacob_com_Variant_getVariantBoolean
+JNIEXPORT jboolean JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantBoolean
   (JNIEnv *, jobject);
 
 /*
@@ -215,7 +215,7 @@ JNIEXPORT jboolean JNICALL Java_com_jacob_com_Variant_getVariantBoolean
  * Method:    getVariantByte
  * Signature: ()B
  */
-JNIEXPORT jbyte JNICALL Java_com_jacob_com_Variant_getVariantByte
+JNIEXPORT jbyte JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantByte
   (JNIEnv *, jobject);
 
 /*
@@ -223,7 +223,7 @@ JNIEXPORT jbyte JNICALL Java_com_jacob_com_Variant_getVariantByte
  * Method:    putVariantBoolean
  * Signature: (Z)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantBoolean
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantBoolean
   (JNIEnv *, jobject, jboolean);
 
 /*
@@ -231,7 +231,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantBoolean
  * Method:    putVariantByte
  * Signature: (B)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantByte
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantByte
   (JNIEnv *, jobject, jbyte);
 
 /*
@@ -239,7 +239,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantByte
  * Method:    putVariantEmpty
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantEmpty
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantEmpty
   (JNIEnv *, jobject);
 
 /*
@@ -247,7 +247,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantEmpty
  * Method:    putVariantNothing
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantNothing
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantNothing
   (JNIEnv *, jobject);
 
 /*
@@ -255,7 +255,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantNothing
  * Method:    getVariantError
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantError
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantError
   (JNIEnv *, jobject);
 
 /*
@@ -263,7 +263,7 @@ JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantError
  * Method:    putVariantError
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantError
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantError
   (JNIEnv *, jobject, jint);
 
 /*
@@ -271,7 +271,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantError
  * Method:    getVariantDouble
  * Signature: ()D
  */
-JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDouble
+JNIEXPORT jdouble JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantDouble
   (JNIEnv *, jobject);
 
 /*
@@ -279,7 +279,7 @@ JNIEXPORT jdouble JNICALL Java_com_jacob_com_Variant_getVariantDouble
  * Method:    putVariantCurrency
  * Signature: (J)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantCurrency
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantCurrency
   (JNIEnv *, jobject, jlong);
 
 /*
@@ -287,7 +287,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantCurrency
  * Method:    putVariantLong
  * Signature: (J)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantLong
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantLong
   (JNIEnv *, jobject, jlong);
 
 /*
@@ -295,7 +295,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantLong
  * Method:    putVariantDispatch
  * Signature: (Ljava/lang/Object;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDispatch
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDispatch
   (JNIEnv *, jobject, jobject);
 
 /*
@@ -303,7 +303,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDispatch
  * Method:    putVariantDouble
  * Signature: (D)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDouble
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDouble
   (JNIEnv *, jobject, jdouble);
 
 /*
@@ -311,7 +311,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDouble
  * Method:    getVariantCurrency
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantCurrency
+JNIEXPORT jlong JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantCurrency
   (JNIEnv *, jobject);
 
 /*
@@ -319,14 +319,14 @@ JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantCurrency
  * Method:    getVariantLong
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantLong
+JNIEXPORT jlong JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantLong
   (JNIEnv *, jobject);
 /*
  * Class:     com_jacob_com_Variant
  * Method:    putVariantFloatRef
  * Signature: (F)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantFloatRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantFloatRef
   (JNIEnv *, jobject, jfloat);
 
 /*
@@ -334,7 +334,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantFloatRef
  * Method:    putVariantCurrencyRef
  * Signature: (J)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantCurrencyRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantCurrencyRef
   (JNIEnv *, jobject, jlong);
 
 /*
@@ -342,7 +342,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantCurrencyRef
  * Method:    putVariantLongRef
  * Signature: (J)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantLongRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantLongRef
   (JNIEnv *, jobject, jlong);
 
 /*
@@ -350,7 +350,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantLongRef
  * Method:    putVariantErrorRef
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantErrorRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantErrorRef
   (JNIEnv *, jobject, jint);
 
 /*
@@ -358,7 +358,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantErrorRef
  * Method:    putVariantBooleanRef
  * Signature: (Z)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantBooleanRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantBooleanRef
   (JNIEnv *, jobject, jboolean);
 
 /*
@@ -366,7 +366,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantBooleanRef
  * Method:    putObjectRef
  * Signature: (Ljava/lang/Object;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putObjectRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putObjectRef
   (JNIEnv *, jobject, jobject);
 
 /*
@@ -374,7 +374,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putObjectRef
  * Method:    putVariantByteRef
  * Signature: (B)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantByteRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantByteRef
   (JNIEnv *, jobject, jbyte);
 
 /*
@@ -382,7 +382,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantByteRef
  * Method:    getString
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_jacob_com_Variant_getVariantString
+JNIEXPORT jstring JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantString
   (JNIEnv *, jobject);
 
 /*
@@ -390,7 +390,7 @@ JNIEXPORT jstring JNICALL Java_com_jacob_com_Variant_getVariantString
  * Method:    putVariantString
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantString
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantString
   (JNIEnv *, jobject, jstring);
 
 /*
@@ -398,7 +398,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantString
  * Method:    getVariantFloatRef
  * Signature: ()F
  */
-JNIEXPORT jfloat JNICALL Java_com_jacob_com_Variant_getVariantFloatRef
+JNIEXPORT jfloat JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantFloatRef
   (JNIEnv *, jobject);
 
 /*
@@ -406,7 +406,7 @@ JNIEXPORT jfloat JNICALL Java_com_jacob_com_Variant_getVariantFloatRef
  * Method:    getVariantCurrencyRef
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantCurrencyRef
+JNIEXPORT jlong JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantCurrencyRef
   (JNIEnv *, jobject);
 
 /*
@@ -414,7 +414,7 @@ JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantCurrencyRef
  * Method:    getVariantLongRef
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantLongRef
+JNIEXPORT jlong JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantLongRef
   (JNIEnv *, jobject);
 
 /*
@@ -422,7 +422,7 @@ JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantLongRef
  * Method:    getVariantErrorRef
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantErrorRef
+JNIEXPORT jint JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantErrorRef
   (JNIEnv *, jobject);
 
 /*
@@ -430,7 +430,7 @@ JNIEXPORT jint JNICALL Java_com_jacob_com_Variant_getVariantErrorRef
  * Method:    getVariantBooleanRef
  * Signature: ()Z
  */
-JNIEXPORT jboolean JNICALL Java_com_jacob_com_Variant_getVariantBooleanRef
+JNIEXPORT jboolean JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantBooleanRef
   (JNIEnv *, jobject);
 
 /*
@@ -438,15 +438,15 @@ JNIEXPORT jboolean JNICALL Java_com_jacob_com_Variant_getVariantBooleanRef
  * Method:    getVariantByteRef
  * Signature: ()B
  */
-JNIEXPORT jbyte JNICALL Java_com_jacob_com_Variant_getVariantByteRef
+JNIEXPORT jbyte JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantByteRef
   (JNIEnv *, jobject);
 
 /*
  * Class:     com_jacob_com_Variant
  * Method:    toVariantSafeArray
- * Signature: (Z)Lcom/jacob/com/SafeArray;
+ * Signature: (Z)Lcom/sap/smb/sbo/wrapper/com/SafeArray;
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_toVariantSafeArray
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_toVariantSafeArray
   (JNIEnv *, jobject, jboolean);
 
 /*
@@ -454,7 +454,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_toVariantSafeArray
  * Method:    putVariantSafeArrayRef
  * Signature: (LSafeArray;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantSafeArrayRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantSafeArrayRef
   (JNIEnv *, jobject, jobject);
 
 /*
@@ -462,7 +462,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantSafeArrayRef
  * Method:    putVariantSafeArray
  * Signature: (LSafeArray;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantSafeArray
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantSafeArray
   (JNIEnv *, jobject, jobject);
 
 /*
@@ -470,7 +470,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantSafeArray
  * Method:    putVariantNoParam
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantNoParam
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantNoParam
   (JNIEnv *, jobject);
 
 /*
@@ -478,7 +478,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantNoParam
  * Method:    getVariantFloat
  * Signature: ()F
  */
-JNIEXPORT jfloat JNICALL Java_com_jacob_com_Variant_getVariantFloat
+JNIEXPORT jfloat JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantFloat
   (JNIEnv *, jobject);
 
 /*
@@ -486,7 +486,7 @@ JNIEXPORT jfloat JNICALL Java_com_jacob_com_Variant_getVariantFloat
  * Method:    putVariantFloat
  * Signature: (F)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantFloat
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantFloat
   (JNIEnv *, jobject, jfloat);
 
 /*
@@ -494,7 +494,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantFloat
  * Method:    changeVariantType
  * Signature: (S)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_changeVariantType
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_changeVariantType
   (JNIEnv *, jobject, jshort);
 
 /*
@@ -502,7 +502,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_changeVariantType
  * Method:    getVariantType
  * Signature: ()S
  */
-JNIEXPORT jshort JNICALL Java_com_jacob_com_Variant_getVariantType
+JNIEXPORT jshort JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantType
   (JNIEnv *, jobject);
 
 /*
@@ -510,7 +510,7 @@ JNIEXPORT jshort JNICALL Java_com_jacob_com_Variant_getVariantType
  * Method:    release
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_release
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_release
   (JNIEnv *, jobject);
 
 /*
@@ -518,21 +518,21 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_release
  * Method:    init
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_init
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_init
   (JNIEnv *, jobject);
 
-JNIEXPORT jbyteArray JNICALL Java_com_jacob_com_Variant_SerializationWriteToBytes
+JNIEXPORT jbyteArray JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_SerializationWriteToBytes
   (JNIEnv *, jobject);
 
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_SerializationReadFromBytes
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_SerializationReadFromBytes
   (JNIEnv *, jobject, jbyteArray);
   
 /*
  * Class:     com_jacob_com_Variant
  * Method:    putVariantVariant
- * Signature: (Lcom/jacob/com/Variant;)V
+ * Signature: (Lcom/sap/smb/sbo/wrapper/com/Variant;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantVariant
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantVariant
   (JNIEnv *, jobject, jobject);
 
 
@@ -541,7 +541,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantVariant
  * Method:    getVariantVariant
  * Signature: ()I
  */
-JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantVariant
+JNIEXPORT jlong JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantVariant
   (JNIEnv *, jobject);
 
 /*
@@ -549,7 +549,7 @@ JNIEXPORT jlong JNICALL Java_com_jacob_com_Variant_getVariantVariant
  * Method:    putVariantDecRef
  * Signature: (Ljava.math.BigDecimal;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDecRef
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDecRef
   (JNIEnv *env, jobject _this, jint signum, jbyte scale, jint lo, jint mid, jint hi);
 
 
@@ -558,7 +558,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDecRef
  * Method:    putVariantDec
  * Signature: (Ljava.math.BigDecimal;)V
  */
-JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDec
+JNIEXPORT void JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_putVariantDec
   (JNIEnv *env, jobject _this, jint signum, jbyte scale, jint lo, jint mid, jint hi);
 
 
@@ -567,7 +567,7 @@ JNIEXPORT void JNICALL Java_com_jacob_com_Variant_putVariantDec
  * Method:    getVariantDecRef
  * Signature: ()Ljava.math.BigDecimal
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_getVariantDecRef
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantDecRef
   (JNIEnv *, jobject);
 
 /*
@@ -575,7 +575,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_getVariantDecRef
  * Method:    getVariantDec
  * Signature: ()Ljava.math.BigDecimal
  */
-JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_getVariantDec
+JNIEXPORT jobject JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_getVariantDec
   (JNIEnv *, jobject);
 
 /*
@@ -583,7 +583,7 @@ JNIEXPORT jobject JNICALL Java_com_jacob_com_Variant_getVariantDec
  * Method:    isVariantConsideredNull
  * Signature: ()Z
  */
-JNIEXPORT jboolean JNICALL Java_com_jacob_com_Variant_isVariantConsideredNull
+JNIEXPORT jboolean JNICALL Java_com_sap_smb_sbo_wrapper_com_Variant_isVariantConsideredNull
   (JNIEnv *, jobject);
 
 /*
